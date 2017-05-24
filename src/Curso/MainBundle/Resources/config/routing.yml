@@ -1,0 +1,24 @@
+curso_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CursoMainBundle:Default:index }
+    
+curso_main_help:
+    path:     /ayuda/{tema}
+    defaults: { _controller: CursoMainBundle:Default:ayuda }
+
+curso_main_nosotros:
+    path:     /nosotros/{nombre}/{apellidos}/{nacimiento}
+    defaults: { _controller: CursoMainBundle:Info:nosotros, nombre:Jorge, apellidos:García, nacimiento:Guanajuato }
+
+curso_main_info:
+    path:     /info/{pagina}
+    defaults: { _controller: CursoMainBundle:Info:pagina_estatica, pagina:quien}
+    
+curso_main_art:
+    path:     /articulos
+    defaults: { _controller: CursoMainBundle:Default:articulos}
+    
+curso_main_arts:
+    path:     /articulo/{id}
+    defaults: { _controller: CursoMainBundle:Default:articulo}
+    
